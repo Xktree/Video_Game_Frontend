@@ -10,6 +10,7 @@ const ConsoleData = ({videoGames}) => {
     });
 
     let distinctConsoles = [...new Set(consoles)]
+    console.log('DistinctConsole', distinctConsoles)
 
     let consoleArrays = distinctConsoles.map(console => {
         
@@ -36,7 +37,7 @@ const ConsoleData = ({videoGames}) => {
 
     return (
         <div>
-            <h1>Console By Global Sales in Millions</h1>
+            <h1>Global Sales by Console in Millions since 2013</h1>
             <Chart chartType='ColumnChart' width='100%' height='400px' data={generateData()} />
         </div>
     );
