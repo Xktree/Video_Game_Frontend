@@ -5,7 +5,7 @@ import './Components/ConsoleData/ConsoleData';
 import ConsoleData from './Components/ConsoleData/ConsoleData';
 // import GameGenreData from './Components/GameGenreData/GameGenreData';
 import Navbar from './Components/Navbar/Navbar';
-// import Searchbar from './Components/Searchbar/Searchbar';
+import Searchbar from './Components/Searchbar/Searchbar';
 
 function App() {
 
@@ -35,7 +35,7 @@ function App() {
                 {/* <GameGenreData videoGames={videoGames}/> */}
             </div>
             <div>
-                {/* <Searchbar videoGames={videoGames}/> */}
+                <Searchbar videoGames={videoGames}/>
             </div>
         </div>
     );

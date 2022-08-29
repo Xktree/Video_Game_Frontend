@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Searchbar.css';
+// import './Searchbar.css';
 import SearchResults from '../SearchResults/SearchResults';
 
 const Searchbar = ({videoGames}) => {
@@ -9,7 +9,7 @@ const Searchbar = ({videoGames}) => {
 
     function searchByParameter (event){
         event.preventDefault();
-        setSearchParameters(videoGames.filter(game => game.name.inclues(search)))
+        setSearchParameters(videoGames.filter(game => game.name.includes(search)))
     }
 
     return (
