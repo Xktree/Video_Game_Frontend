@@ -22,7 +22,7 @@
 
 // (10 points) As a video game enthusiast, I want to see a data visualization of the analyzed data regarding the developer created sample evaluation question.
 
-    // Question: What is the best RPG game of all time? 
+    // Question: What is the best RPG game of all time in North America? 
 
 // (10 points) As a video game enthusiast, I want to be able to search for a game and see its details.
 
