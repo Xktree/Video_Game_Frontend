@@ -1,9 +1,8 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './App.css';
-import './Components/ConsoleData/ConsoleData';
 import ConsoleData from './Components/ConsoleData/ConsoleData';
-// import GameGenreData from './Components/GameGenreData/GameGenreData';
+import GameGenreData from './Components/GameGenreData/GameGenreData';
 import Navbar from './Components/Navbar/Navbar';
 import Searchbar from './Components/Searchbar/Searchbar';
 
@@ -22,7 +21,7 @@ function App() {
             console.log(response.data);
 
         } catch (error) {
-            console.log(error);
+            console.log(error.message);
         }
     };
 
@@ -32,7 +31,7 @@ function App() {
             <Navbar/>
             <div>
                 <ConsoleData videoGames={videoGames}/>
-                {/* <GameGenreData videoGames={videoGames}/> */}
+                <GameGenreData videoGames={videoGames}/>
             </div>
             <div>
                 <Searchbar videoGames={videoGames}/>

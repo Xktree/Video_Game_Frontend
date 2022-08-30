@@ -1,37 +1,37 @@
-import React from 'react';
-// import './SearchResults.css';
+// import React from 'react';
+// // import './SearchResults.css';
 
-const SearchResults = ({gameResults}) => {
+// const SearchResults = ({gameResults}) => {
 
-    return (
-        <div>
-            <table>
-                <tr>
-                    <th>Name</th>
-                    <th>Rank</th>
-                    <th>Platform</th>
-                    <th>Year Released</th>
-                    <th>Genre</th>
-                    <th>Creator</th>
-                    <th>Global Sales</th>
-                </tr>
-            {gameResults.map((videoGame) => {
+//     return (
+//         <div>
+//             <table>
+//                 <tr>
+//                     <th>Name</th>
+//                     <th>Rank</th>
+//                     <th>Platform</th>
+//                     <th>Year Released</th>
+//                     <th>Genre</th>
+//                     <th>Creator</th>
+//                     <th>Global Sales</th>
+//                 </tr>
+//             {gameResults.map((game) => {
 
-                return (
-                <tr>
-                    <td>{videoGame.name}</td>
-                    <td>{videoGame.game_rank}</td>
-                    <td>{videoGame.platform}</td>
-                    <td>{videoGame.year}</td>
-                    <td>{videoGame.genre}</td>
-                    <td>{videoGame.publisher}</td>
-                    <td>{videoGame.globalsales}</td>
-                </tr>
-                )
-            })}
-            </table>
-        </div>
-    );
-}
+//                 return (
+//                 <tr>
+//                     <td>{game.name}</td>
+//                     <td>{game.game_rank}</td>
+//                     <td>{game.platform}</td>
+//                     <td>{game.year}</td>
+//                     <td>{game.genre}</td>
+//                     <td>{game.publisher}</td>
+//                     <td>{game.globalsales}</td>
+//                 </tr>
+//                 )
+//             })}
+//             </table>
+//         </div>
+//     );
+// }
 
-export default SearchResults;
+// export default SearchResults;

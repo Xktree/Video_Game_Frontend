@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import './Searchbar.css';
-import SearchResults from '../SearchResults/SearchResults';
+// import SearchResults from '../SearchResults/SearchResults';
 
 const Searchbar = ({videoGames}) => {
 
@@ -16,7 +16,7 @@ const Searchbar = ({videoGames}) => {
     <div>
         <input className="searchbar" type='text' placeholder='What game would you like to find today?' value={search} onChange={(event) => setSearch(event.target.value)}/>
         <button className="searchbar-button" onClick={searchByParameter}>Search</button>
-        <SearchResults searchParameters = {searchParameters}/>
+        {/* <SearchResults searchParameters = {searchParameters}/> */}
     </div>
     )
 }
